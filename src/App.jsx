@@ -372,7 +372,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import csvToJson from "./util/csvToJson";
 import Plot from "react-plotly.js";
-import { FaTools } from "react-icons/fa";
+// import { FaTools } from "react-icons/fa";
 import { GrDocumentImage } from "react-icons/gr";
 import html2canvas from "html2canvas";
 
@@ -544,9 +544,12 @@ function App() {
       {/* <header>&copy; JaCoya Thompson</header> */}
       <div className="content">
         <aside>
-          <h1>
-            <FaTools /> Chart Setup
-          </h1>
+          <a
+            className="link"
+            href="https://jacoyat08.github.io/updatedDataVizUpload/"
+          >
+            <h1>DataViz</h1>
+          </a>
 
           <div className="wrapper">
             <label htmlFor="title">Title</label>
@@ -725,12 +728,12 @@ function App() {
       </div>
       <footer>
         <span>&copy; 2024 JaCoya Thompson</span>
-        <span>
+        {/* <span>
           Built by{" "}
           <a href="https://www.upwork.com/freelancers/~01502fac21fd11e46a?s=1110580755107926016">
             Ibanga Ibanga
           </a>
-        </span>
+        </span> */}
       </footer>
       <ToastContainer
         position="top-center"
